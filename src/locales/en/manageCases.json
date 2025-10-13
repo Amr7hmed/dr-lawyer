@@ -1,0 +1,17 @@
+{
+  "title": "Manage Cases",
+  "heading": "Manage Requests",
+  "tabs": {
+    "requests": "Requests",
+    "active": "Active",
+    "completed": "Completed",
+    "cancelled": "Cancelled"
+  },
+  "requests": {
+    "budget": "Budget",
+    "edit": "Edit",
+    "viewResponses": "View {{count}} responses",
+    "responses": "{{count}} response",
+    "moreOptions": "More options"
+  }
+}

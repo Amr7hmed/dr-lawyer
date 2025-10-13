@@ -1,0 +1,61 @@
+{
+  "header": "إنشاء طلب",
+
+  "title": {
+    "label": "العنوان",
+    "placeholder": "أدخل العنوان هنا"
+  },
+  "description": {
+    "label": "وصف القضية",
+    "placeholder": "صف عرضك بالتفصيل"
+  },
+  "caseType": {
+    "label": "نوع القضية",
+    "placeholder": "اختر الفئة"
+  },
+  "documentType":{
+    "label":"نوع المستند",
+    "placeholder": "اختر عضوًا في الفريق"
+  },
+  "serviceNeeded":{
+    "label":"الخدمة المطلوبة",
+    "placeholder": "اختر عضوًا في الفريق"
+  },
+  "sourcelangauge":{
+    "label":"اللغة المصدر",
+    "placeholder": "اختر عضوًا في الفريق"
+  },
+  "targetlangauge":{
+    "label":"اللغة المستهدفة",
+    "placeholder": "اختر عضوًا في الفريق"
+  },
+  "areaOfExpert":{
+    "label":"مجال الخبرة",
+    "placeholder": "اختر عضوًا في الفريق"
+  },
+  "budget": {
+    "label": "الميزانية",
+    "currency": "العملة"
+  },
+  "attachments": {
+    "label": "المرفقات",
+    "optional": "اختياري",
+    "cta": "إرفاق ملف"
+  },
+  "submit": "إرسال العرض",
+  "loading": "جارٍ التحميل...",
+  "toast": {
+    "success": "تم إنشاء القضية بنجاح",
+    "error": "حدث خطأ أثناء الإرسال"
+  },
+  "file": {
+    "tooMany": "خطأ في تحميل الملفات",
+    "limitDescription": "يمكنك تحميل 8 ملفات كحد أقصى.",
+    "duplicate": "خطأ في تحميل الملفات",
+    "duplicateDescription": "الملف \"{{name}}\" مرفق بالفعل.",
+    "tooBig": "خطأ في تحميل الملفات",
+    "tooBigDescription": "يتجاوز الملف \"{{name}}\" الحد الأقصى المسموح به وهو 5 ميجابايت.",
+    "invalid": "خطأ في تحميل الملفات",
+    "invalidDescription": "الملف \"{{name}}\" بامتداد غير مدعوم."
+  }
+}

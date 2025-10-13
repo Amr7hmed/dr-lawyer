@@ -1,0 +1,27 @@
+{
+  "title": "Case Requests",
+  "offers": {
+    "title": "View Offers ({{count}} Responses)",
+    "empty": {
+      "title": "No Offers Received",
+      "description": "You haven’t received any request yet",
+      "refresh": "Refresh"
+    }
+  },
+  "card": {
+    "responses": "{{count}} responses",
+    "edit": "Edit",
+    "budget": "Budget: {{currency}} {{budget}}",
+    "remove": "Remove offer",
+    "view": "View Offer",
+    "seeMore": "see more",
+    "seeLess": "see less"
+  },
+  "cancel": {
+    "button": "Cancel",
+    "title": "Cancel Request",
+    "description": "Are you sure you want to cancel the case?",
+    "close": "Close",
+    "confirm": "Yes, cancel"
+  }
+}

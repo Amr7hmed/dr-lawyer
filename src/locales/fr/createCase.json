@@ -1,0 +1,41 @@
+{
+  "header": "Créer une demande",
+
+  "title": {
+    "label": "Titre",
+    "placeholder": "Saisissez le titre ici"
+  },
+  "description": {
+    "label": "Description de l'affaire",
+    "placeholder": "Décrivez votre demande"
+  },
+  "caseType": {
+    "label": "Type d'affaire",
+    "placeholder": "Sélectionnez une catégorie"
+  },
+  "budget": {
+    "label": "Budget",
+    "currency": "Devise"
+  },
+  "attachments": {
+    "label": "Pièces jointes",
+    "optional": "optionnel",
+    "cta": "Joindre un fichier"
+  },
+  "submit": "Envoyer la demande",
+  "loading": "Chargement...",
+  "toast": {
+    "success": "Affaire créée avec succès",
+    "error": "Erreur lors de l'envoi"
+  },
+  "file": {
+    "tooMany": "Erreur de téléchargement",
+    "limitDescription": "Vous pouvez télécharger jusqu'à 8 fichiers.",
+    "duplicate": "Erreur de téléchargement",
+    "duplicateDescription": "Le fichier \"{{name}}\" est déjà joint.",
+    "tooBig": "Erreur de téléchargement",
+    "tooBigDescription": "Le fichier \"{{name}}\" dépasse la limite de 5 Mo.",
+    "invalid": "Erreur de téléchargement",
+    "invalidDescription": "Le fichier \"{{name}}\" a un format non pris en charge."
+  }
+}

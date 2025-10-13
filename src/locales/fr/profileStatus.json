@@ -1,0 +1,11 @@
+{
+  "title": "Statut du profil",
+  "success": "Félicitations ! Votre profil a été approuvé",
+  "pending": "Nous vérifions actuellement votre profil.",
+  "rejected": "Désolé ! Votre profil a été rejeté",
+  "rejectedMsg1": "Votre visage n'était pas clair sur les photos",
+  "rejectedMsg2": "Vous avez téléchargé la photo de quelqu’un d’autre",
+  "rejectedMsg3": "Nous n’avons pas pu vérifier votre identité",
+  "understand": "Compris",
+  "continue": "Continuer"
+}

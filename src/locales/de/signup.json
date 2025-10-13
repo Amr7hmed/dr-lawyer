@@ -1,0 +1,36 @@
+{
+  "title": "Registrieren",
+  "header": "Für ein Konto registrieren",
+  "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut",
+  "step1": {
+    "email": "E-Mail",
+    "emailTitle": "Geben Sie Ihre E-Mail-Adresse ein",
+    "emailDescription": "Wir senden Ihnen eine SMS mit einem Bestätigungscode an Ihre E-Mail-Adresse.",
+    "phone": "Telefon",
+    "label": "Geben Sie Ihre Telefonnummer ein",
+    "phoneDescription": "Wir senden Ihnen eine SMS mit einem Bestätigungscode an Ihre Telefonnummer.",
+    "phonePlaceholder": "Telefonnummer",
+    "searchPlaceholder": "Land suchen...",
+    "searchEmpty": "Kein Land gefunden"
+  },
+  "otp": {
+    "label": "Bestätigungscode eingeben",
+    "description": "Wir haben Ihnen einen Bestätigungscode an",
+    "resend": "Ich habe keinen Code erhalten"
+  },
+  "step3": {
+    "title": "Erstellen Sie Ihr Passwort",
+    "description": "Bitte erstellen Sie ein Passwort. Stellen Sie sicher, dass das Passwort einzigartig ist",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen"
+  },
+  "terms": {
+    "label": "Mit der Registrierung stimmen Sie unseren",
+    "and": "und",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzbestimmungen"
+  },
+  "haveAccount": "Sie haben bereits ein Konto?",
+  "signin": "Anmelden",
+  "submit": "Weiter"
+}

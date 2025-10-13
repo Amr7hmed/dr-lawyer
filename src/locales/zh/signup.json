@@ -1,0 +1,36 @@
+{
+  "title": "注册",
+  "header": "注册一个账户",
+  "error": "出现问题，请稍后再试",
+  "step1": {
+    "email": "电子邮件",
+    "emailTitle": "输入您的电子邮件地址",
+    "emailDescription": "我们将向您的电子邮件发送一条包含验证码的短信。",
+    "phone": "电话",
+    "label": "输入您的电话号码",
+    "phoneDescription": "我们将向您的电话号码发送一条包含验证码的短信。",
+    "phonePlaceholder": "电话号码",
+    "searchPlaceholder": "搜索国家...",
+    "searchEmpty": "未找到国家"
+  },
+  "otp": {
+    "label": "输入验证码",
+    "description": "我们已将验证码发送到",
+    "resend": "我没有收到验证码"
+  },
+  "step3": {
+    "title": "创建您的密码",
+    "description": "请创建密码。请确保密码是唯一的",
+    "password": "密码",
+    "confirmPassword": "确认密码"
+  },
+  "terms": {
+    "label": "注册即表示您同意我们的",
+    "and": "和",
+    "terms": "服务条款",
+    "privacy": "隐私政策"
+  },
+  "haveAccount": "已经有账户？",
+  "signin": "登录",
+  "submit": "继续"
+}

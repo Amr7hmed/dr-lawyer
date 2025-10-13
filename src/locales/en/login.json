@@ -1,0 +1,19 @@
+{
+  "title": "Login",
+  "header": "Sign in to your account",
+  "description": "Welcome back! please enter your details",
+  "error": "Something went wrong, please try again later",
+  "step1": {
+    "email": "Phone number or email",
+    "password": "Password",
+    "forgotPassword": "I've forgotten my password"
+  },
+  "social": {
+    "or": "Or continue with",
+    "google": "Continue with Google",
+    "apple": "Continue with Apple"
+  },
+  "noAccount": "Don't have an account?",
+  "signup": "Sign up",
+  "submit": "Continue"
+}

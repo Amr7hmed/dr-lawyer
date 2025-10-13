@@ -1,0 +1,61 @@
+{
+  "header": "Create Request",
+
+  "title": {
+    "label": "Title",
+    "placeholder": "Enter title here"
+  },
+  "description": {
+    "label": "Case Description",
+    "placeholder": "Describe your offer"
+  },
+  "caseType": {
+    "label": "Case Type",
+    "placeholder": "Select a category"
+  },
+  "documentType":{
+    "label":"Document Type",
+    "placeholder": "Select team member"
+  },
+  "serviceNeeded":{
+    "label":"Service Needed",
+    "placeholder": "Select team member"
+  },
+  "sourcelangauge":{
+    "label":"Source Langauge",
+    "placeholder": "Select team member"
+  },
+  "targetlangauge":{
+    "label":"Target Langauge",
+    "placeholder": "Select team member"
+  },
+  "areaOfExpert":{
+    "label":"Area of expert",
+    "placeholder": "Select team member"
+  },
+  "budget": {
+    "label": "Budget",
+    "currency": "Currency"
+  },
+  "attachments": {
+    "label": "Attachment",
+    "optional": "optional",
+    "cta": "Attach File"
+  },
+  "submit": "Send Offer",
+  "loading": "Loading...",
+  "toast": {
+    "success": "Case created successfully",
+    "error": "Submission Error"
+  },
+  "file": {
+    "tooMany": "File Upload Error",
+    "limitDescription": "You can upload a maximum of 8 files.",
+    "duplicate": "File Upload Error",
+    "duplicateDescription": "File \"{{name}}\" is already attached.",
+    "tooBig": "File Upload Error",
+    "tooBigDescription": "File \"{{name}}\" exceeds the 5MB limit.",
+    "invalid": "File Upload Error",
+    "invalidDescription": "File \"{{name}}\" has an unsupported format."
+  }
+}

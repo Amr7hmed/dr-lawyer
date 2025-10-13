@@ -1,0 +1,19 @@
+{
+  "title": "Anmelden",
+  "header": "Melden Sie sich bei Ihrem Konto an",
+  "description": "Willkommen zurück! Bitte geben Sie Ihre Daten ein",
+  "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut",
+  "step1": {
+    "email": "Telefonnummer oder E-Mail",
+    "password": "Passwort",
+    "forgotPassword": "Ich habe mein Passwort vergessen"
+  },
+  "social": {
+    "or": "Oder fortfahren mit",
+    "google": "Weiter mit Google",
+    "apple": "Weiter mit Apple"
+  },
+  "noAccount": "Sie haben noch kein Konto?",
+  "signup": "Registrieren",
+  "submit": "Weiter"
+}

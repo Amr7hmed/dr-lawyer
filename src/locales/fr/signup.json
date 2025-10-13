@@ -1,0 +1,36 @@
+{
+  "title": "Inscription",
+  "header": "Créez un compte",
+  "error": "Une erreur s'est produite, veuillez réessayer plus tard",
+  "step1": {
+    "email": "E-mail",
+    "emailTitle": "Saisissez votre adresse e-mail",
+    "emailDescription": "Nous vous enverrons un SMS avec un code de vérification à votre adresse email.",
+    "phone": "Téléphone",
+    "label": "Saisissez votre numéro de téléphone",
+    "phoneDescription": "Nous vous enverrons un SMS avec un code de vérification à votre numéro de téléphone.",
+    "phonePlaceholder": "Numéro de téléphone",
+    "searchPlaceholder": "Rechercher un pays...",
+    "searchEmpty": "Aucun pays trouvé"
+  },
+  "otp": {
+    "label": "Saisir le code de vérification",
+    "description": "Nous vous avons envoyé un code de vérification à",
+    "resend": "Je n'ai pas reçu de code"
+  },
+  "step3": {
+    "title": "Créez votre mot de passe",
+    "description": "Veuillez créer un mot de passe. Assurez-vous que le mot de passe est unique",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe"
+  },
+  "terms": {
+    "label": "En vous inscrivant, vous acceptez nos",
+    "and": "et notre",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité"
+  },
+  "haveAccount": "Vous avez déjà un compte ?",
+  "signin": "Se connecter",
+  "submit": "Continuer"
+}

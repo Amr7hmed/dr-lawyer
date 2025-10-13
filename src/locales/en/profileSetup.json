@@ -1,0 +1,130 @@
+{
+  "title": "Profile Setup",
+  "header": "Set up your profile",
+  "description": "Please use real information. We will verify all your information later.",
+  "error": "Some information seems incorrect. Please check your details and try again.",
+  "next": "Next",
+  "step1": {
+    "role": "Are you a lawyer?",
+    "yes": "Yes, Iam a lawyer",
+    "no": "No, I am here for case",
+    "name": "What is your name?",
+    "gender": "What is your gender?",
+    "genderPlaceholder": "Select gender",
+    "male": "Male",
+    "female": "Female"
+  },
+  "step2": {
+    "title": "Select languages you support",
+    "selected": "Select languages",
+    "searchPlaceholder": "Search Language",
+    "languagesLabel": "Select languages",
+    "clear": "Clear all",
+    "languagesEmpty": "No languages found",
+    "experience": "Years of experience"
+  },
+  "step3": {
+    "title": "Add your location",
+    "country": "Country",
+    "countryPlaceholder": "Select a country",
+    "countrySearchPlaceholder": "Search country...",
+    "countryEmpty": "No countries found",
+    "city": "City",
+    "cityPlaceholder": "Select a city",
+    "cityEmpty": "No cities found",
+    "address": "Address",
+    "postalCode": "Postal Code",
+    "or": "Or",
+    "mapSelect": "Select From map",
+    "map": {
+      "title": "Choose your location",
+      "description": "Click on the map to set your location or use the GPS button to find it.",
+      "myLocation": "My Location",
+      "searchPlaceholder": "Search location...",
+      "loading": "Loading...",
+      "save": "Save",
+      "cancel": "Cancel",
+      "noGeo": "Geolocation is not supported by your browser.",
+      "denied": "Permission denied. Please allow location access.",
+      "unAvailable": "Location unavailable. Try again later.",
+      "timeOut": "Location request timed out. Please try again.",
+      "failed": "Failed to detect your location.",
+      "fetchError": "Failed to fetch address information.",
+      "noDetect": "Failed to detect your location.",
+      "failedMarker": "Failed to fetch address for the selected location."
+    }
+  },
+  "step4": {
+    "title": "Your consultation Rate/hr",
+    "h": "/hr",
+    "currency": "Currency",
+    "loading": "Loading..."
+  },
+  "step5": {
+    "title": "Select your Specializations",
+    "description": "Please tell us more about in which niche you have expertise",
+    "toastError": "Failed to load specializations. Please try again.",
+    "error": "We couldn’t load the list of specializations. Please refresh the page or try again later."
+  },
+  "step6": {
+    "title": "Your Availability",
+    "day": "Day",
+    "from": "From",
+    "to": "To",
+    "sunday": "Sunday",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday"
+  },
+  "step7": {
+    "title": "Add your Profile Picture",
+    "description": "Please make sure that your picture is clear.",
+    "loading": "Loading...",
+    "retake": "Retake",
+    "gallery": "Take a photo or select from gallery",
+    "upload": "Select from Gallery",
+    "selfie": "Take a Selfie",
+    "next": "Next",
+    "modal": {
+      "title": "Take a Selfie",
+      "description": "Please align your face in the center and ensure proper lighting. We need a clear picture for verification.",
+      "cameraError": "Failed to access camera.",
+      "captureError": "Failed to capture photo. Please try again.",
+      "capture": "Capture",
+      "cancel": "Cancel",
+      "loading": "Loading camera…",
+      "denied": "Camera access denied",
+      "unAvailable": "We couldn’t access your camera. Please allow permission in your browser settings and try again.",
+      "retry": "Try again"
+    }
+  },
+  "step8": {
+    "title": "Please upload your ID Card",
+    "description": "Please make sure that your picture is clear.",
+    "retake": "Retake",
+    "uploadFront": "Upload Front Side",
+    "uploadBack": "Upload Back Side",
+    "agree": "I agree to platform",
+    "terms": "Terms & Conditions",
+    "next": "Next"
+  },
+  "step9": {
+    "title": "License Certificate",
+    "description": "Please make sure that your picture is clear.",
+    "uploadCompany": "Upload Company Certificate",
+    "uploadLicense": "Upload License Certificate",
+    "retake": "Retake",
+    "next": "Next"
+  },
+  "step10": {
+    "title": "License Certificate",
+    "name": "License Certificate",
+    "by": "Certified or awarded by (ex. Google)",
+    "year": "Year",
+    "none": "I don’t have any certificate yet",
+    "Type":"Type"
+  }
+}

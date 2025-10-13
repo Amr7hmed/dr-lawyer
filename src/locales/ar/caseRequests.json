@@ -1,0 +1,27 @@
+{
+  "title": "طلبات القضايا",
+  "offers": {
+    "title": "اظهار العروض ({{count}} طلب)",
+    "empty": {
+      "title": "لم يتم استلام عروض",
+      "description": "لم تستلم أي طلب بعد",
+      "refresh": "تحديث"
+    }
+  },
+  "card": {
+    "responses": "{{count}} طلب",
+    "edit": "تعديل",
+    "budget": "الميزانية: {{currency}} {{budget}}",
+    "remove": "إزالة العرض",
+    "view": "اظهار العرض",
+    "seeMore": "عرض المزيد",
+    "seeLess": "عرض أقل"
+  },
+  "cancel": {
+    "button": "إلغاء",
+    "title": "إلغاء الطلب",
+    "description": "هل أنت متأكد من أنك تريد إلغاء القضية؟",
+    "close": "إغلاق",
+    "confirm": "نعم، إلغاء"
+  }
+}

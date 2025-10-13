@@ -1,0 +1,129 @@
+{
+  "title": "Configuration du Profil",
+  "header": "Configurez votre profil",
+  "description": "Veuillez utiliser des informations réelles. Nous vérifierons toutes vos données par la suite.",
+  "error": "Certaines informations semblent incorrectes. Veuillez vérifier vos données et réessayer.",
+  "next": "Suivant",
+  "step1": {
+    "role": "Êtes-vous avocat ?",
+    "yes": "Oui, je suis avocat",
+    "no": "Non, je suis ici pour un cas",
+    "name": "Quel est votre nom ?",
+    "gender": "Quel est votre genre ?",
+    "genderPlaceholder": "Sélectionnez le genre",
+    "male": "Masculin",
+    "female": "Féminin"
+  },
+  "step2": {
+    "title": "Choisissez les langues que vous maîtrisez",
+    "selected": "Langues sélectionnées",
+    "searchPlaceholder": "Rechercher une langue",
+    "languagesLabel": "Sélectionnez les langues",
+    "clear": "Tout effacer",
+    "languagesEmpty": "Aucune langue trouvée",
+    "experience": "Années d’expérience"
+  },
+  "step3": {
+    "title": "Ajoutez votre localisation",
+    "country": "Pays",
+    "countryPlaceholder": "Sélectionnez un pays",
+    "countrySearchPlaceholder": "Recherchez un pays...",
+    "countryEmpty": "Aucun pays trouvé",
+    "city": "Ville",
+    "cityPlaceholder": "Sélectionnez une ville",
+    "cityEmpty": "Aucune ville trouvée",
+    "address": "Adresse",
+    "postalCode": "Code postal",
+    "or": "Ou",
+    "mapSelect": "Choisir sur la carte",
+    "map": {
+      "title": "Choisissez votre emplacement",
+      "description": "Cliquez sur la carte pour indiquer votre emplacement ou utilisez le bouton GPS.",
+      "myLocation": "Ma position",
+      "searchPlaceholder": "Rechercher un lieu...",
+      "loading": "Chargement…",
+      "save": "Enregistrer",
+      "cancel": "Annuler",
+      "noGeo": "La géolocalisation n’est pas supportée par votre navigateur.",
+      "denied": "Permission refusée. Veuillez autoriser l’accès à la localisation.",
+      "unAvailable": "Localisation indisponible. Veuillez réessayer plus tard.",
+      "timeOut": "La requête de localisation a expiré. Veuillez réessayer.",
+      "failed": "Échec de la détection de votre position.",
+      "fetchError": "Impossible de récupérer l’adresse.",
+      "noDetect": "Impossible de détecter votre position.",
+      "failedMarker": "Impossible de récupérer l’adresse du point sélectionné."
+    }
+  },
+  "step4": {
+    "title": "Votre tarif de consultation €/h",
+    "h": "/h",
+    "currency": "Devise",
+    "loading": "Chargement…"
+  },
+  "step5": {
+    "title": "Sélectionnez vos spécialisations",
+    "description": "Veuillez nous indiquer dans quels domaines vous êtes expert",
+    "toastError": "Échec du chargement des spécialisations. Veuillez réessayer.",
+    "error": "Impossible de charger la liste des spécialisations. Veuillez actualiser la page ou réessayer plus tard."
+  },
+  "step6": {
+    "title": "Vos disponibilités",
+    "day": "Jour",
+    "from": "De",
+    "to": "À",
+    "sunday": "Dimanche",
+    "monday": "Lundi",
+    "tuesday": "Mardi",
+    "wednesday": "Mercredi",
+    "thursday": "Jeudi",
+    "friday": "Vendredi",
+    "saturday": "Samedi"
+  },
+  "step7": {
+    "title": "Ajoutez votre photo de profil",
+    "description": "Assurez-vous que votre photo soit nette.",
+    "loading": "Chargement…",
+    "retake": "Reprendre",
+    "gallery": "Prendre une photo ou choisir depuis la galerie",
+    "upload": "Sélectionner depuis la galerie",
+    "selfie": "Prendre un selfie",
+    "next": "Suivant",
+    "modal": {
+      "title": "Prenez un selfie",
+      "description": "Cadrez votre visage au centre et assurez-vous d’un bon éclairage. Nous avons besoin d’une photo claire pour la vérification.",
+      "cameraError": "Impossible d’accéder à la caméra.",
+      "captureError": "Impossible de capturer la photo. Veuillez réessayer.",
+      "capture": "Capturer",
+      "cancel": "Annuler",
+      "loading": "Chargement de la caméra…",
+      "denied": "Accès à la caméra refusé",
+      "unAvailable": "Impossible d’accéder à votre caméra. Veuillez autoriser l’accès dans les paramètres du navigateur.",
+      "retry": "Réessayer"
+    }
+  },
+  "step8": {
+    "title": "Veuillez télécharger votre carte d’identité",
+    "description": "Assurez-vous que la photo soit claire.",
+    "retake": "Reprendre",
+    "uploadFront": "Télécharger côté recto",
+    "uploadBack": "Télécharger côté verso",
+    "agree": "J’accepte la plateforme",
+    "terms": "Conditions générales",
+    "next": "Suivant"
+  },
+  "step9": {
+    "title": "Certificat de licence",
+    "description": "Assurez-vous que la photo soit claire.",
+    "uploadCompany": "Télécharger le certificat de l’entreprise",
+    "uploadLicense": "Télécharger le certificat de licence",
+    "retake": "Reprendre",
+    "next": "Suivant"
+  },
+  "step10": {
+    "title": "Certificat de licence",
+    "name": "Certificat de licence",
+    "by": "Certifié ou délivré par (ex. Google)",
+    "year": "Année",
+    "none": "Je n’ai pas encore de certificat"
+  }
+}

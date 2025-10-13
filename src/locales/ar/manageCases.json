@@ -1,0 +1,17 @@
+{
+  "title": "إدارة القضايا",
+  "heading": "إدارة الطلبات",
+  "tabs": {
+    "requests": "الطلبات",
+    "active": "قيد التنفيذ",
+    "completed": "مكتملة",
+    "cancelled": "ملغاة"
+  },
+  "requests": {
+    "budget": "الميزانية",
+    "edit": "تعديل",
+    "viewResponses": "عرض {{count}} طلب",
+    "responses": "{{count}} طلب",
+    "moreOptions": "خيارات إضافية"
+  }
+}

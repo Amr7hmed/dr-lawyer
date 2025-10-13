@@ -1,0 +1,37 @@
+{
+  "title": "Sign up",
+  "header": "Sign up for an account",
+  "error": "Something went wrong, please try again later",
+
+  "step1": {
+    "email": "Email",
+    "emailTitle": "Enter your email address",
+    "emailDescription": "We will send you a text with a verification code at your email.",
+    "phone": "Phone",
+    "label": "Enter your phone number",
+    "phoneDescription": "We will send you a text with a verification code at your phone number.",
+    "phonePlaceholder": "Phone number",
+    "searchPlaceholder": "Search country...",
+    "searchEmpty": "No country found"
+  },
+  "otp": {
+    "label": "Enter verification code",
+    "description": "We have sent you a verification to",
+    "resend": "I haven’t received a code"
+  },
+  "step3": {
+    "title": "Create your Password",
+    "description": "Please create password. Make sure the password is unique",
+    "password": "Password",
+    "confirmPassword": "Confirm Password"
+  },
+  "terms": {
+    "label": "By Signing up, you agree to our",
+    "and": "and",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  },
+  "haveAccount": "Already have an account?",
+  "signin": "Sign in",
+  "submit": "Continue"
+}

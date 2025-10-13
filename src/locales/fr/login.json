@@ -1,0 +1,19 @@
+{
+  "title": "Connexion",
+  "header": "Connectez-vous à votre compte",
+  "description": "Bon retour ! Veuillez saisir vos informations",
+  "error": "Une erreur s'est produite, veuillez réessayer plus tard",
+  "step1": {
+    "email": "Numéro de téléphone ou e-mail",
+    "password": "Mot de passe",
+    "forgotPassword": "J'ai oublié mon mot de passe"
+  },
+  "social": {
+    "or": "Ou continuer avec",
+    "google": "Continuer avec Google",
+    "apple": "Continuer avec Apple"
+  },
+  "noAccount": "Vous n'avez pas de compte ?",
+  "signup": "S'inscrire",
+  "submit": "Continuer"
+}
