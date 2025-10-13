@@ -27,10 +27,10 @@ import { useNavigate } from "react-router";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 import { useParams } from "react-router";
-import NotarySection from "./notarysection";
+import NotarySection from "./notarySection";
 import GeneralLawyerSection from "./generalLawyerSection";
 import LegalTranslatorSection from "./legalTranslatorSection";
-import JudicialExpertSection from "./JudicialExpertSection";
+import JudicialExpertSection from "./judicialExpertSection";
 
 export default function CaseForm() {
   const fileInputRef = useRef<HTMLInputElement>(null);
