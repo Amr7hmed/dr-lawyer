@@ -9,7 +9,9 @@ import type { AxiosError } from "axios";
 export const useGetStreamTokenQuery = (
   options?: Partial<UseQueryOptions<{ token: string }, AxiosError>>
 ) => {
-  return useQuery<{ token: string }, AxiosError>({
+  return useQuery<{
+    data: any; token: string 
+}, AxiosError>({
     queryKey: ["stream", "token"],
     queryFn: () => StreamService.getStreamToken(),
     ...options,

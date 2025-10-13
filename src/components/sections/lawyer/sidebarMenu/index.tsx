@@ -16,7 +16,7 @@ const navItems = [
   { label: "Dashboard", path: "/lawyer/dashboard", icon: IconDashboard },
   { label: "Browse Cases", path: "/lawyer/browse-cases/most-recent", icon: IconBrowseCases },
   { label: "My Cases", path: "/lawyer/my-cases/all", icon: IconMyCases },
-  //{ label: "Messages", path: "/lawyer/messages", icon: IconMessages },
+  { label: "Messages", path: "/lawyer/messages", icon: IconMessages },
   { label: "Settings", path: "/lawyer/settings/profile", icon: IconSettings },
 ];
 

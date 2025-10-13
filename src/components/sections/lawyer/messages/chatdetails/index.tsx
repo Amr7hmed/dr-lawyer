@@ -21,14 +21,8 @@ export default function ChatDetails({
   userId,
   onUnread,
   selectedChatId,
-}: {
-  client: StreamChat;
-  chat: { id: string; name: string; email: string; avatar: string };
-  userId: string;
-  onUnread?: (chatId: string) => void;
-  selectedChatId?: string | null;
-}) {
-const sendMessageMutation = useSendMessageMutation();
+}: any) {
+  const sendMessageMutation = useSendMessageMutation();
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [channelReady, setChannelReady] = useState(false);
@@ -44,11 +38,12 @@ const sendMessageMutation = useSendMessageMutation();
     let isMounted = true;
     const initChannel = async () => {
       try {
-        const channelId = [userId, chat.id].sort().join("-");
-        const ch = client.channel("messaging", channelId, {
+        const shortChannelId = `${userId.slice(0, 8)}-${chat.id.slice(0, 8)}`;
+        const ch = client.channel("messaging", shortChannelId, {
           name: `${userId}-${chat.id}`,
           members: [userId, chat.id],
         });
+
 
         // 🔥 اعمل create لو القناة مش موجودة
         await ch.create();
@@ -106,60 +101,60 @@ const sendMessageMutation = useSendMessageMutation();
 
 
 
-const sendMessage = async (options?: { file?: File; location?: any }) => {
-  if ((!input.trim() && !options) || !channelReady || !channelRef.current) return;
+  const sendMessage = async (options?: { file?: File; location?: any }) => {
+    if ((!input.trim() && !options) || !channelReady || !channelRef.current) return;
 
-  try {
-    // ✅ لو text عادي
-    if (!options && input.trim()) {
-      // call API backend
-      await sendMessageMutation.mutateAsync({
-        channelId: channelRef.current.id,
-        message: input.trim(),
-      });
+    try {
+      // ✅ لو text عادي
+      if (!options && input.trim()) {
+        // call API backend
+        await sendMessageMutation.mutateAsync({
+          channelId: channelRef.current.id,
+          message: input.trim(),
+        });
 
-      // still push it locally
-      await channelRef.current.sendMessage({ text: input });
-      setInput("");
+        // still push it locally
+        await channelRef.current.sendMessage({ text: input });
+        setInput("");
+      }
+
+      // ✅ لو file
+      else if (options?.file) {
+        const uploaded = options.file.type.startsWith("image/")
+          ? await channelRef.current.sendImage(options.file)
+          : await channelRef.current.sendFile(options.file);
+
+        await channelRef.current.sendMessage({
+          text: "",
+          attachments: [
+            {
+              type: options.file.type.startsWith("image/") ? "image" : "file",
+              asset_url: uploaded.file,
+              title: options.file.name,
+            },
+          ],
+        });
+      }
+
+      // ✅ لو location
+      else if (options?.location) {
+        await channelRef.current.sendMessage({
+          text: "📍 My location",
+          attachments: [
+            {
+              type: "location",
+              latitude: options.location.latitude,
+              longitude: options.location.longitude,
+              asset_url: options.location.url,
+              title: "View on Google Maps",
+            },
+          ],
+        });
+      }
+    } catch (err) {
+      console.error("❌ Error sending message:", err);
     }
-
-    // ✅ لو file
-    else if (options?.file) {
-      const uploaded = options.file.type.startsWith("image/")
-        ? await channelRef.current.sendImage(options.file)
-        : await channelRef.current.sendFile(options.file);
-
-      await channelRef.current.sendMessage({
-        text: "",
-        attachments: [
-          {
-            type: options.file.type.startsWith("image/") ? "image" : "file",
-            asset_url: uploaded.file,
-            title: options.file.name,
-          },
-        ],
-      });
-    }
-
-    // ✅ لو location
-    else if (options?.location) {
-      await channelRef.current.sendMessage({
-        text: "📍 My location",
-        attachments: [
-          {
-            type: "location",
-            latitude: options.location.latitude,
-            longitude: options.location.longitude,
-            asset_url: options.location.url,
-            title: "View on Google Maps",
-          },
-        ],
-      });
-    }
-  } catch (err) {
-    console.error("❌ Error sending message:", err);
-  }
-};
+  };
 
 
   return (

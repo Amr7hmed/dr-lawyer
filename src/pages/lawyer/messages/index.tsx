@@ -24,9 +24,6 @@ export default function MessagesLawyer() {
   useEffect(() => {
     if (!channels) return;
     console.log("📡 Channels:", channels);
-
-    // هنا ممكن تستخدم الـ channels اللي راجعة من الـ API
-    // وتبني منها الـ chatsList زي ما عملت
   }, [channels]);
 
 useEffect(() => {
@@ -66,7 +63,7 @@ useEffect(() => {
         });
 
         const manualUser: ChatItem = {
-          id: "049baedc-70b0-443a-b8b1-3668771bad27",
+          id: "9940ef9f-c355-408d-a056-10244cd29f44",
           name: "Test Client",
           email: "client@example.com",
           avatar: "https://randomuser.me/api/portraits/lego/2.jpg",
