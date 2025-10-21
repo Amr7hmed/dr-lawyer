@@ -19,7 +19,6 @@ const DashboardPage = () => {
         <HeroSection dashboard={data!} />
         <div className="w-full flex gap-[12px] items-start">
           <div className="flex flex-col gap-[15px] flex-1">
-            
             <SummarySection dashboard={data!} />
             <RecentCasesSection />
           </div>

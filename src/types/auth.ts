@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export type UserStatus =
   | "ACTIVE"
   | "PENDING"
@@ -6,7 +7,13 @@ export type UserStatus =
   | "COMPLETED"
   | "SUSPENDED"
   | "REJECTED";
+export interface Language {
+  code: string;
+  flag: string;
+  name: string;
+}
 export interface User {
+  lawyerOrganization: any;
   id: string;
   isActive: boolean;
   email?: string | null;
@@ -18,7 +25,7 @@ export interface User {
   profileImage?: string | null;
   fullName: string;
   gender: "male";
-  languages: string[];
+  languages: Language[];
 }
 export interface AuthResponse {
   success: boolean;

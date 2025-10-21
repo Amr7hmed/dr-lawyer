@@ -1,6 +1,6 @@
 import ProfileLawyer from "@/pages/lawyer/profile/profileLawyer";
 import ProfileEdit from "@/pages/lawyer/profile/ProfileEdit";
-import ProfileLawyerAbout from "@/pages/lawyer/profile/profileLawyerAbout";
+import ProfileLawyerAbout from "@/pages/lawyer/profile/aboutUs";
 import ProfileLawyerHelpAndSupport from "@/pages/lawyer/profile/profileLawyerHelpAndSupport";
 import ProfileLawyerContactSupport from "@/pages/lawyer/profile/ProfileLawyerContactSupport";
 import ProfileLawyerNotificationSettings from "@/pages/lawyer/profile/profileNotificationSettings";

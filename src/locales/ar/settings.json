@@ -1,0 +1,26 @@
+{
+  "ContactSupport": {
+    "titlePage": "الدعم الفني",
+    "title": "الإبلاغ عن مشكلة فنية",
+    "subtitle": "من فضلك أدخل التفاصيل أدناه. سنتواصل معك عبر البريد الإلكتروني قريبًا.",
+    "placeholderMessage": "اكتب رسالتك هنا",
+    "addScreenshot": "إضافة لقطة شاشة (اختياري)",
+    "sendButton": "إرسال",
+    "sendingButton": "جارٍ الإرسال...",
+    "successTitle": "تم الإرسال بنجاح",
+    "successDescription": "سنتواصل معك قريبًا عبر البريد الإلكتروني.",
+    "errorTitle": "حدث خطأ",
+    "errorDescription": "تأكد من اتصالك بالإنترنت أو تسجيل الدخول.",
+    "validationMin": "الرسالة يجب أن تكون على الأقل 10 أحرف",
+    "validationRequired": "الرسالة مطلوبة"
+  },
+  "AllowNotifications": {
+    "title": "السماح بالإشعارات",
+    "all": "كل الإشعارات",
+    "offersResponse": "ردود العروض",
+    "messages": "الرسائل",
+    "caseUpdates": "تحديثات القضايا",
+    "system": "إشعارات النظام",
+    "success": "تم تحديث الإعدادات بنجاح ✨"
+  }
+}

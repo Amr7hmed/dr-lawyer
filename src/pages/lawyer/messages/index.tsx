@@ -5,9 +5,9 @@ import { useGetStreamChannelsQuery, useGetStreamTokenQuery } from "@/hooks/useSt
 import { StreamChat } from "stream-chat";
 
 type ChatItem = {
-  id: string;   // userId
+  id: string;
   name: string;
-  email: string; // للعرض فقط
+  email: string;
   avatar: string;
 };
 
@@ -19,7 +19,7 @@ export default function MessagesLawyer() {
 
   const currentUser = "mohameds.brikaa@gmail.com";
   const { data: streamData, isLoading, error } = useGetStreamTokenQuery();
-  const { data: channels, isLoadingChannels, errorChannels } = useGetStreamChannelsQuery();
+  const { data: channels } = useGetStreamChannelsQuery();
 
   useEffect(() => {
     if (!channels) return;

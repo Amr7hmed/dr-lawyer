@@ -1,0 +1,27 @@
+{
+  "ContactSupport": {
+    "titlePage": "Technical Support",
+    "title": "Report a Technical Issue",
+    "subtitle": "Please enter the details below. We will contact you soon via email.",
+    "placeholderMessage": "Type your message here",
+    "addScreenshot": "Add a screenshot (optional)",
+    "sendButton": "Send",
+    "sendingButton": "Sending...",
+    "successTitle": "Message Sent Successfully",
+    "successDescription": "We will contact you soon via email.",
+    "errorTitle": "An Error Occurred",
+    "errorDescription": "Please check your internet connection or log in.",
+    "validationMin": "The message must be at least 10 characters long",
+    "validationRequired": "The message is required"
+  },
+  "AllowNotifications": {
+    "title": "Allow Notifications",
+    "all": "All Notifications",
+    "offersResponse": "Offers Response",
+    "messages": "Messages",
+    "caseUpdates": "Case Updates",
+    "system": "System",
+    "success": "Settings updated successfully ✨"
+  }
+  
+}

@@ -4,7 +4,7 @@ import api from "@/lib/axios";
 
 export class StreamService {
   static async getStreamToken(): Promise<{ token: string }> {
-    const response = await api.post("/stream/token"); // من غير body
+    const response = await api.post("/stream/token");
     return response.data;
   }
   

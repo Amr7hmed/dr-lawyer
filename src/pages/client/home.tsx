@@ -16,8 +16,8 @@ const transformLawyers = (lawyers: LawyerFromAPI[]): LawyerCardData[] => {
     name: lawyer.fullName,
     location: lawyer.lawyerProfile?.country ?? "Unknown",
     rate: lawyer.practiceTypeTranslated?.title ?? "N/A",
-    ratings: "5.0", // ثابت مؤقتاً
-    experience: "10", // ثابت مؤقتاً
+    ratings: "5.0",
+    experience: "10",
     avatar: lawyer.profileImage ?? "/placeholder.svg",
   }));
 };

@@ -9,9 +9,51 @@ import {
   IconHalfStar,
   IconUneStar
 } from "@/assets/icons";
+import dayjs from "dayjs";
 
-/* eslint-disable no-irregular-whitespace */
+import { useQuery } from "@tanstack/react-query";
+import { AuthService } from "@/services/authService";
+import type { User } from "@/types/auth";
+import { motion } from "framer-motion";
+import SidebarInfo from "@/components/sections/lawyer/profileLawyer/aboutus/sidebarInfo";
+import "./stayle.scss";
+
+
 export default function ProfileLawyerAbout() {
+  const { data, isLoading, isError } = useQuery<{ data: User }>({
+    queryKey: ["currentUser"],
+    queryFn: AuthService.getCurrentUser,
+  });
+
+  if (isLoading) {
+    return (
+      <div className="p-[30px] bg-white rounded-2xl w-full flex flex-col gap-6">
+        {[...Array(7)].map((_, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0.2 }}
+            animate={{ opacity: [0.2, 0.6, 0.2] }}
+            transition={{ duration: 1.5, repeat: Infinity }}
+            className="w-full h-10 bg-gradient-to-r from-slate-200 via-slate-100 to-slate-200 rounded-xl"
+          />
+        ))}
+      </div>
+    );
+  }
+
+  // 🛑 في حالة الخطأ
+  if (isError || !data) {
+    return (
+      <div className="p-8 text-red-500">
+        Failed to load profile.
+      </div>
+    );
+  }
+
+  const user = data.data;
+
+  console.log("user>>", user);
+
   return (
     <div className="w-full flex gap-3 h-full">
       {/* Sidebar */}
@@ -22,7 +64,7 @@ export default function ProfileLawyerAbout() {
             src="https://placehold.co/150x150"
           />
           <div className="self-stretch text-center justify-center text-neutral-800 text-xl font-bold font-['Manrope']">
-            Mark Henry
+            {user?.fullName}
           </div>
           <div className="inline-flex justify-start items-center gap-1">
             <IconProfileStar />
@@ -36,75 +78,48 @@ export default function ProfileLawyerAbout() {
             </div>
           </div>
         </div>
-        {/**
-IconProfileLastActive
-IconProfileCurrentCasesDate
-IconProfileGender
-IconProfileLocation
-IconProfileLanguage
-         
-        */}
         {/* Info Section */}
         <div className="w-full inline-flex flex-col justify-start items-start gap-[20px]">
-          {/* Last Active */}
-          <div className="w-full h-12 relative">
-            <IconProfileLastActive />
-            <div className="left-[54px] top-[21px] absolute justify-center text-neutral-800 text-base font-semibold font-['Manrope'] leading-snug">
-              10 hours ago (Active User)
-            </div>
-            <div className="left-[54px] top-[3px] absolute justify-start text-slate-400 text-xs font-medium font-['Manrope'] leading-tight">
-              Last active
-            </div>
-          </div>
-          <div className="self-stretch h-0 outline outline-1 outline-offset-[-0.50px] outline-slate-200 w-full" />
 
-          {/* Current Cases */}
-          <div className="w-full h-12 relative">
-            <IconProfileCurrentCasesDate />
-            <div className="left-[54px] top-[21px] absolute justify-center text-neutral-800 text-base font-semibold font-['Manrope'] leading-snug">
-              3 Cases in Queue
-            </div>
-            <div className="left-[54px] top-[3px] absolute justify-start text-slate-400 text-xs font-medium font-['Manrope'] leading-tight">
-              Current Cases
-            </div>
-          </div>
-          <div className="self-stretch h-0  outline-1 outline-offset-[-0.50px] outline-slate-200 w-full" />
+          <SidebarInfo
+            icon={<IconProfileLastActive />}
+            label="Last active"
+            value={`${dayjs(user.updatedAt).fromNow()} (Active User)`}
+          />
 
-          {/* Gender */}
-          <div className="w-full h-12 relative">
-            <IconProfileGender />
-            <div className="left-[54px] top-[21px] absolute justify-center text-neutral-800 text-base font-semibold font-['Manrope'] leading-snug">
-              Male
-            </div>
-            <div className="left-[54px] top-[3px] absolute justify-start text-slate-400 text-xs font-medium font-['Manrope'] leading-tight">
-              Gender
-            </div>
-          </div>
-          <div className="self-stretch h-0  outline-1 outline-offset-[-0.50px] outline-slate-200 w-full" />
+          <div className="self-stretch h-0 outline-1 outline-offset-[-0.50px] outline-slate-200 w-full" />
 
-          {/* Location */}
-          <div className="w-full h-12 relative">
-            <IconProfileLocation />
-            <div className="left-[54px] top-[22px] absolute justify-center text-neutral-800 text-sm font-semibold font-['Manrope']">
-              Abu Dhabi, UAE
-            </div>
-            <div className="left-[54px] top-[3px] absolute justify-start text-slate-400 text-xs font-medium font-['Manrope'] leading-tight">
-              Location
-            </div>
-          </div>
-          <div className="self-stretch h-0  outline-1 outline-offset-[-0.50px] outline-slate-200 w-full" />
+          <SidebarInfo
+            icon={<IconProfileCurrentCasesDate />}
+            label="Current Cases"
+            value="3 Cases in Queue"
+          />
 
-          {/* Language */}
-          <div className="w-full h-12 relative">
-            <IconProfileLanguage />
-            <div className="left-[54px] top-[21px] absolute justify-center text-neutral-800 text-base font-semibold font-['Manrope'] leading-snug">
-              English, French
-            </div>
-            <div className="left-[54px] top-[3px] absolute justify-start text-slate-400 text-xs font-medium font-['Manrope'] leading-tight">
-              Language
-            </div>
-          </div>
+          <div className="self-stretch h-0 outline-1 outline-offset-[-0.50px] outline-slate-200 w-full" />
+
+          <SidebarInfo
+            icon={<IconProfileGender />}
+            label="Gender"
+            value={user?.gender || "—"}
+          />
+
+          <div className="self-stretch h-0 outline-1 outline-offset-[-0.50px] outline-slate-200 w-full" />
+
+          <SidebarInfo
+            icon={<IconProfileLocation />}
+            label="Location"
+            value={`${user?.lawyerOrganization?.city || "—"}, ${user?.lawyerOrganization?.country || ""}`}
+          />
+
+          <div className="self-stretch h-0 outline-1 outline-offset-[-0.50px] outline-slate-200 w-full" />
+
+          <SidebarInfo
+            icon={<IconProfileLanguage />}
+            label="Language"
+            value={user.languages?.length ? user.languages.map((lang) => lang.name).join(", ") : "—"}
+          />
         </div>
+
       </div>
 
       {/* Main Content */}
